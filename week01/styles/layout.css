@@ -9,6 +9,29 @@ body{
     padding: 2rem;
     grid-column: 1/4;
 }
+
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:aqua;
+    align-items: center;
+}
+
+.navigation a {
+    display: block;
+    color: blue;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color:coral ;
+}
+
 .main{
     background-color: orange;
     grid-column: 1/3;
