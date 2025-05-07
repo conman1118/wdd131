@@ -1,21 +1,20 @@
 :root {
     /* Fonts */
-    --heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
-    --standard-font: 'Montserrat', Helvetica, sans-serif;
-
+    --heading-font: "Tuffy", sans-serif;
+    --standard-font: "Cascadia Code", sans-serif;
     /* Colors */
-    --primary-color: #B5E2FA;
-    --secondary-color: #0FA3B1;
+    --primary-color: #99C2A2;
+    --secondary-color: #93B1A7;
     --text-color: #F9F7F3;
-    --accent-color1: #EDDEA4;
-    --accent-color2: #F7A072;
+    --accent-color1: #7A918D;
+    --accent-color2: #C5EDAC;
     --black: #000000;
 }
 
 /* wild card settings */
 * {
     background-color: transparent;
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -44,7 +43,7 @@ body {
 }
 
 header {
-    grid-column: span 2;
+    grid-column: 1 /5;
     grid-row: 1;
     background-color: var(--primary-color);
     position: relative;
@@ -62,8 +61,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: absolute;
-    bottom: 0;
+    position:absolute;
     border: 1px solid var(--secondary-color)
 }
 
