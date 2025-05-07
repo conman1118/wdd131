@@ -1,45 +1,194 @@
-body{
+:root {
+    /* Fonts */
+    --heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
+    --standard-font: 'Montserrat', Helvetica, sans-serif;
+
+    /* Colors */
+    --primary-color: #B5E2FA;
+    --secondary-color: #0FA3B1;
+    --text-color: #F9F7F3;
+    --accent-color1: #EDDEA4;
+    --accent-color2: #F7A072;
+    --black: #000000;
+}
+
+/* wild card settings */
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    text-shadow: 2px 2px 5px var(--secondary-color);
+    
+}
+
+p, a {
+    font-size: large;
+    font-weight: 600;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
     display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / auto 1fr auto;
+    grid-template: 1fr 4fr .5fr / 3fr 1fr;
+
+    /* The grid-template above is essentially the same as the following two lines: 
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 0fr 4fr 2fr; 
+    */
 }
 
-.header{
-    background-color: pink;
-    padding: 2rem;
-    grid-column: 1/4;
+header {
+    grid-column: span 2;
+    grid-row: 1;
+    background-color: var(--primary-color);
+    position: relative;
+    
 }
 
-.navigation{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    background-color:aqua;
-    align-items:center;
-}
-
-.navigation a {
-    display: block;
-    color: blue;
-    padding: 0.75rem;
-    text-decoration: none;
+header h1 {
+    margin: .5em;
     text-align: center;
 }
 
-.navigation a:hover{
+nav {
+    width: 100%;
+    background-color: var(--accent-color1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid var(--secondary-color)
+}
+
+nav a {
+    margin: 1em 0 1em 0;
+    color: var(--black);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
     font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color:coral ;
 }
 
-.navigation li{
-    flex: 1 1 auto;
+main {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 1em;
+    max-width: fit-content;
+    border: 1px solid var(--accent-color2);
+    border-radius: 25px;
 }
 
-.card1{
-    grid-column: 1/3;
+main h2 {
+    text-align: center;
+    padding: .5em;
+    background-color: var(--accent-color2);
+    border: 1px solid var(--accent-color2);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
-.card2{
-    grid-column: 3/4;
+main p {
+    margin: 1.5em;
+}
+
+.about {
+    display: flex;
+    margin: 2em;
+}
+
+.about img {
+    margin: 2em;
+    border-radius: 10%;
+    box-shadow: 4px 4px 16px gray;
+}
+
+.about p {
+    align-self: center;
+    text-align: justify;    
+}
+
+.state {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.state h3 {
+    grid-column: 1 / 3;
+    width: 100%;
+    text-align: center;
+}
+
+.state hr {
+    margin-left: 10em;
+    grid-column: 1 / 3;
+    width: 75%;
+}
+
+.state img {
+    grid-column: 1;
+    margin: 1.5em 0 0 5em;
+}
+
+.state p {
+    grid-column: 2;
+    text-align: justify;
+}
+
+.profile {
+    width: 200px;
+}
+
+.flag {
+    width: 200px;
+}
+
+aside {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 1em;
+    border: 1px solid var(--accent-color2);
+    border-radius: 25px;
+}
+
+aside h2 {
+    text-align: center;
+    padding: .5em;
+    background-color: var(--accent-color2);
+    border: 1px solid var(--accent-color2);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+aside p, ul {
+    margin: 10em 0 0 4em;
+}
+
+aside li {
+    margin-bottom: 1.5em;
+}
+
+footer {
+    grid-column: span 2;
+    grid-row: 3;
+    background-color: var(--primary-color);
+    border-top: 1px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 1.5em;
+    font-family: var(--heading-font);
+    font-size: medium;
+    color: var(--aside-color);
+    text-align: center;
+    text-shadow: 2px 2px 4px var(--accent-color1);
 }
