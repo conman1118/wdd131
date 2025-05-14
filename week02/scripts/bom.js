@@ -1,17 +1,33 @@
-const input = document.querySelector('#favchap');
-
+const input  = document.querySelector('#favchap');
 const button = document.querySelector('button');
+const list   = document.querySelector('#list');
 
-const list = document.querySelector('________')
+button.addEventListener('click', () => {
+  const text = input.value.trim();
+  if (!text) return; // ignore empty
 
-const li = document.createElement('li');
+  // build a new list‑item
+  const li = document.createElement('li');
+  li.textContent = text;
 
-const deleteButton = document.createElement('button');
+  // add a little ❌ button
+  const del = document.createElement('button');
+  del.textContent = '❌';
+  del.classList.add('delete');      // hooks into your .delete CSS
+  del.addEventListener('click', () => {
+    li.remove();                    // delete on click
+  });
 
-li.textContent = input.value;
+  // assemble and insert
+  li.append(del);
+  list.append(li);
 
-deleteButton.textContent = '❌'
+  // clear & refocus
+  input.value = '';
+  input.focus();
+});
 
-li.append(deleteButton);
-
-list.append(li);
+// (Optional) let user press Enter in the input
+input.addEventListener('keydown', e => {
+  if (e.key === 'Enter') button.click();
+});
