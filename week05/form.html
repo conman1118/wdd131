@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="form-wrapper">
+
+            <form method="get" action="review.html" id="reviewForm">
+
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product …</option>
+                    <!-- JS will populate -->
+                </select>
+            </div>
+
+        <!-- Overall Rating -->
+            <fieldset class="form-group rating-group">
+                <legend>Overall Rating</legend>
+                    <div class="stars">
+                <!-- stars -->
+                        <label for="r5" class="star-label">★ ★ ★ ★ ★</label>
+                        <input type="radio" id="r5" name="rating" value="5" required>
+                        <label for="r4" class="star-label">★ ★ ★ ★</label>
+                        <input type="radio" id="r4" name="rating" value="4">
+                        <label for="r3" class="star-label">★ ★ ★</label>
+                        <input type="radio" id="r3" name="rating" value="3">
+                        <label for="r2" class="star-label">★ ★</label>
+                        <input type="radio" id="r2" name="rating" value="2">
+                        <label for="r1" class="star-label">★</label>
+                        <input type="radio" id="r1" name="rating" value="1">
+                        </div>
+            </fieldset>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+        </div>
+
+        <!-- Features -->
+            <fieldset class="form-group">
+                <legend>Which features did you find useful? <span class="hint">(Check all that apply)</span></legend>
+                <div class="checkboxes">
+                    <label>
+                    <input type="checkbox" name="features" value="durability"> 
+                    Durability
+                    </label>
+                    <label>
+                    <input type="checkbox" name="features" value="easeOfUse">
+                    Ease of Use
+                    </label>
+                    <label>
+                    <input type="checkbox" name="features" value="performance">
+                    Performance
+                    </label>
+                    <label>
+                    <input type="checkbox" name="features" value="design">
+                    Design
+                    </label>
+                </div>
+            </fieldset>
+        <form>
+            <div class="form-group">
+                <label for="writtenReview">Written Review <span class="hint">(Optional)</span></label>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </div>
+
+        <!-- User Name -->
+            <div class="form-group">
+                <label for="userName">Your Name <span class="hint">(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+            </div>
+
+        <!-- Submit -->
+            <div class="form-group">
+                <input type="submit" value="Post Review" class="btn-submit">
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        ©2025 🙈 Connor Neus 🙈<br>
+        Gilbert, Arizona<br>
+        <span class="last-modified"></span>
+    </footer>
+
+</body>
+</html>
