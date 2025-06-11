@@ -1,0 +1,84 @@
+@media (min-width: 375px) and (max-width: 425px) {
+  nav button {
+    padding: 0.7rem 1.5rem;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .showcase .txtContent h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .showcase .txtContent p {
+    width: 100%;
+  }
+
+  .bgImg img {
+    content: url("/imgs/image-hero-landscape@2x.png");
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .bgImg {
+    position: absolute;
+    top: 63%;
+    left: 0%;
+    padding: 0 1rem;
+  }
+
+  .curve_img {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+  }
+
+  .curve_img img {
+    width: 70%;
+  }
+
+  .showcase .Numbers {
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(115%);
+  }
+
+  .Numbers .nums {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+
+  .just_work .img img {
+    content: url("/imgs/image-jeremy-small.png");
+  }
+
+  .just_work .content {
+    transform: translateY(-15%);
+  }
+
+  article {
+    transform: translateY(60%);
+  }
+
+  .txt > p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 2;
+  }
+
+  .footer_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  footer {
+    transform: translateY(150%);
+  }
+}

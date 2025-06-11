@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Dark: #172339;
+  --lightDark: #49566d;
+  --lightWhite: #f3ede7;
+  --lightGray: #faf8f6;
+
+  --purple: #a060ff;
+  --Pink: #cb30e3;
+  --Orange: #ffa84e;
+
+   --primaryColor: #f94f4f;
+  --secondaryColor: #191921;
+
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lightGray);
+  font-family: "Epilogue", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header .menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+}
+
+header nav {
+  background-color: var(--primaryColor);
+  width: calc(1440px - 50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 2rem;
+}
+
+header nav ul li:nth-child(4) {
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+  padding: 1rem 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+.toogle {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-close {
+  display: none;
+}
+
+/* =============Showcase Start=============== */
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  position: relative;
+  width: 100%;
+}
+
+.showcase .txtContent h2 {
+  font-weight: normal;
+  color: var(--Dark);
+  font-size: 4.6rem;
+  line-height: 1.2;
+  margin: 1.5rem 0;
+  width: 60%;
+}
+
+.showcase .txtContent h2 span {
+  font-weight: 600;
+  color: var(--Dark);
+}
+
+.showcase .txtContent p {
+  font-size: 1.2rem;
+  color: var(--lightDark);
+  width: 40%;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+
+.showcase .txtContent button {
+  background-color: #172339;
+  color: var(--lightWhite);
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.showcase .txtContent button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(160, 96, 255, 1) 0%,
+    rgba(203, 48, 227, 1) 33%,
+    rgba(255, 168, 78, 1) 100%
+  );
+}
+
+.Numbers .nums {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  margin-right: 6rem;
+}
+
+.Numbers .nums h2 {
+  font-size: 3rem;
+  color: var(--Dark);
+}
+
+.Numbers .nums p {
+  color: var(--lightDark);
+}
+
+.bgImg {
+  position: absolute;
+  top: 22%;
+  left: 42%;
+  z-index: -1;
+}
+
+.curve_img {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+/* =============Showcase close=============== */
+
+/* ==================Just Work Section Start */
+article {
+  transform: translateY(30%);
+}
+
+.just_work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: var(--Dark);
+  border-radius: 10px;
+  box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5);
+  grid-gap: 2rem;
+}
+
+.just_work .img {
+  display: block;
+  margin: 0 auto;
+}
+
+.just_work .content {
+  width: 100%;
+  color: var(--lightGray);
+}
+
+.just_work .content h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.just_work .content h2 span {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.txt {
+  margin: 3rem 0;
+  width: 80%;
+}
+
+.txt > p {
+  margin: 2rem 0;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.designation {
+  font-style: italic;
+  line-height: 1.7;
+}
+/* ==================Just Work Section Close */
+
+/* ============Footer Start============= */
+footer {
+  background-color: var(--lightWhite);
+  height: 350px;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 350px;
+  padding: 2rem 0;
+}
+
+.social_icons img {
+  padding: 0 1rem;
+}
+/* ============Footer close============= */
