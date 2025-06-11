@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #f94f4f;
+  --secondaryColor: #191921;
+
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+}
+
+.container1 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+}
+
+header .menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+}
+
+header nav {
+  background-color: var(--primaryColor);
+  width: calc(1440px - 50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 2rem;
+}
+
+header nav ul li:nth-child(4) {
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+  padding: 1rem 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+.toogle {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-close {
+  display: none;
+}
+
+/* ==============Showcase Start============== */
+.showcase_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.showcase_wrapper .hero_img {
+  object-fit: cover;
+  width: 65%;
+}
+
+.showcase_wrapper h2 {
+  font-size: 4rem;
+}
+
+.showcase_wrapper p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.showcase_wrapper button {
+  outline: none;
+  border: none;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 1rem 3rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  font-family: inherit;
+}
+
+/* ==============Showcase Close============== */
+
+/* ==============Design Start============== */
+#design {
+  position: relative;
+  z-index: -1;
+}
+
+.design_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.design_img {
+  width: 100%;
+}
+
+.design_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.design_content {
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.design_content .content {
+  width: 60%;
+}
+
+.design_content .content h2 {
+  font-size: 3rem;
+}
+
+.design_content .content h2 span {
+  color: var(--primaryColor);
+}
+
+.design_content .content p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.design_content .content a {
+  color: var(--primaryColor);
+}
+
+.design_shap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ==============Design Close============== */
+
+/* ==============Approach Start============== */
+.approach_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app_txt h2 {
+  font-size: 2.5rem;
+  transform: translateX(15%);
+  z-index: 1;
+}
+
+.bg_with_txt {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-10%);
+  z-index: -1;
+  height: 780px;
+}
+
+.txt_with_number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.txt_with_number .numbers h2 {
+  font-size: 4rem;
+  opacity: 0.5;
+}
+
+.txt_with_number h4 {
+  margin: 2.5rem 0;
+}
+
+.txt_with_number p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.txt_with_number .numbers {
+  position: absolute;
+  top: 5px;
+  left: -50px;
+}
+/* ==============Approach Close============== */
+
+/* ==============Brand Naming Start============== */
+#brand_naming {
+  transform: translateY(-13%);
+}
+
+.brand_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.brand_content {
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  width: 600px;
+  height: 400px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: -78px;
+}
+
+.brand_content h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.brand_content .btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.brand_wrapper .brand_img {
+  position: absolute;
+  top: -78px;
+  right: 0;
+}
+
+.brand_wrapper .brand_img img {
+  object-fit: cover;
+  width: 805px;
+  height: 600px;
+}
+
+.brand_wrapper .brand_shap {
+  position: absolute;
+  top: 0;
+  right: 55%;
+  transform: translate(10%, 50%);
+  z-index: 10;
+}
+/* ==============Brand Naming Close============== */
+
+/* ==============build_something Start============== */
+#build_something {
+  margin-top: 27%;
+  margin-bottom: 4rem;
+}
+
+.build_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.build_content h2 {
+  font-size: 3rem;
+}
+
+.build_content button {
+  outline: none;
+  border: none;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 1rem 3rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  font-family: inherit;
+}
+/* ==============build_something Close============== */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/contact.js" defer></script>
+  </head>
+  <body>
+        <header>
+      <div class="container1">
+        <div class="menus">
+          <div class="logo">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="toogle">
+            <img
+              src="images/icon-hamburger.svg"
+              alt=""
+              class="menu-btn"
+            />
+            <img
+              src="images/icon-cross.svg"
+              alt=""
+              class="menu-close"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="form-control">
+            <div class="split">
+              <div class="form-split">
+                <label> First Name</label>
+                <input type="text" class="first_name" />
+                <p class="error"></p>
+              </div>
+              <div class="form-split">
+                <label> Last Name</label>
+                <input type="text" class="last_name" />
+                <p class="error"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-control">
+            <label>Email Address</label>
+            <input type="text" class="email" />
+            <p class="error"></p>
+          </div>
+          <div class="radio-control">
+            <label> Query Type</label>
+            <div class="radio-controls">
+              <div class="split-radio">
+                <input
+                  type="radio"
+                  name="query"
+                  value="Genral Equiry"
+                  class="btn-radio"
+                />
+                <span>General Query</span>
+              </div>
+              <div class="split-radio">
+                <input
+                  type="radio"
+                  name="query"
+                  value="Support Requests"
+                  class="btn-radio"
+                />
+                <span>Support Request</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-control">
+            <label>Message</label>
+            <div class="message">
+              <textarea rows="5" class="txt_message"></textarea>
+            </div>
+            <p class="error"></p>
+          </div>
+          <div class="terms">
+            <div class="terms_wrapper">
+              <input type="checkbox" class="termsCondition" />
+            </div>
+            <p>I consent to begin contacted by the team</p>
+            <p class="error"></p>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

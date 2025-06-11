@@ -1,0 +1,140 @@
+@media (max-width: 1024px) {
+  header nav {
+    width: calc(1080px - 50%);
+  }
+
+  /* ==============Showcase Start============== */
+  .showcase_wrapper .hero_img {
+    object-fit: cover;
+    width: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  /* ==============Design Start============== */
+  .design_shap {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* ==============Brand Naming Start============== */
+
+  .brand_content {
+    width: 500px;
+    height: 400px;
+  }
+
+  .brand_wrapper .brand_img img {
+    object-fit: cover;
+    width: 805px;
+    height: 400px;
+  }
+
+  .brand_wrapper .brand_shap {
+    position: absolute;
+    top: 0;
+    right: 42%;
+    transform: translate(10%, 50%);
+    z-index: 10;
+  }
+
+  /* ==============build_something Start============== */
+  #build_something {
+    margin-top: 35%;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  header nav {
+    width: calc(768px - 50%);
+  }
+
+  header nav ul li {
+    margin-left: 1.5rem;
+  }
+
+  header nav ul li:nth-child(4) {
+    padding: 1rem 1rem;
+  }
+
+  /* ==============Showcase Start============== */
+  .showcase_wrapper .hero_img {
+    object-fit: cover;
+    width: 40%;
+    z-index: -1;
+  }
+
+  .showcase_wrapper .hero_img img {
+    content: url("./assets/tablet/image-hero.jpg");
+  }
+
+  .showcase_wrapper h2 {
+    font-size: 3rem;
+  }
+
+  /* ==============Design Start============== */
+
+  .design_wrapper .design_img img {
+    content: url("./assets/tablet/image-strategic.jpg");
+  }
+
+  .design_content {
+    width: 900px;
+  }
+
+  .design_content .content {
+    width: 75%;
+  }
+
+  .design_shap {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* ==============Approach Start============== */
+  .app_txt {
+    width: 80%;
+  }
+
+  .app_txt h2 {
+    font-size: 2rem;
+    transform: translateX(10%);
+    z-index: 1;
+  }
+
+  /* ==============Brand Naming Start============== */
+  .brand_content {
+    width: 350px;
+    height: 400px;
+  }
+
+  .brand_wrapper .brand_img img {
+    content: url("./assets/tablet/image-slide-1.jpg");
+    width: 425px;
+    height: 500px;
+  }
+
+  .brand_content h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* ==============build_something Start============== */
+  #build_something {
+    margin-top: 62%;
+    margin-bottom: 4rem;
+  }
+
+  .build_content h2 {
+    font-size: 2rem;
+  }
+}
