@@ -14,15 +14,15 @@
   --blackColor: #000000;
 }
 
+body {
+  font-family: "Commissioner", sans-serif;
+}
+
 .container1 {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
-}
-
-body {
-  font-family: "Commissioner", sans-serif;
 }
 
 header .menus {
